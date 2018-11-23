@@ -1,0 +1,16 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+{% for st in students %}
+
+	<table>
+	<tr>
+	<td style="padding: 15px">Name : {{ st.name }}</td>
+	<td style="padding: 15px">Age : {{ st.age }}</td>
+	<td style="padding: 15px">Gender : {{ st.gender }}</td>
+	</table>
+
+{% endfor %}
+
+{% endblock %}
